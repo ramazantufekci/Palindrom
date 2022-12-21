@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     static boolean isPalindrom(int number){
@@ -15,6 +17,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrom(191));
+        int number;
+        Scanner scanner = new Scanner(System.in);
+        number = scanner.nextInt();
+        System.out.println(isPalindrom(number)?"Bu sayı palindrom":"Bu sayı palindrom değil");
     }
 }
